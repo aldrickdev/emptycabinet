@@ -1,9 +1,12 @@
-from emptycabinet.dep import helpers
+from fastapi import FastAPI
+from emptycabinet.routers import products
 
 
-def main():
-    print(f"2 + 2 = {helpers.add(2, 2)}")
+app = FastAPI()
+
+app.include_router(products.router)
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def index():
+    return {"Endpoints": ["/api/products"]}
