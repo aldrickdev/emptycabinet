@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "emptycabinet"
+version = "0.1.0"
+description = "This project is to help keep inventory of everyday items"
+authors = ["Aldrick Castro <aldrickdev@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.74.0"
+uvicorn = "^0.17.5"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+mypy = "^0.931"
+tox = "^3.24.5"
+pytest = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
