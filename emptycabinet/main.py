@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from emptycabinet.routers import products
 
+from emptycabinet.routers import products
 
 app = FastAPI()
 
