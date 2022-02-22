@@ -5,6 +5,8 @@ requp:
 	@echo Updating requirements_dev.txt
 	@poetry export --dev -o requirements_dev.txt
 	@echo Requirement Files Update Complete!!
+	@rm -rf .tox
+	@echo Cleared tox cache
 
 :PHONY run
 run:
